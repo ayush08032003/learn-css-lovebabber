@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+        }
+        img{
+            margin: 10px;
+        }
+        .container{
+            position: relative;
+            height: 8000px;
+            background-color: aquamarine;
+        }
+        .image2{
+            /* position: relative;
+            top: 50px;
+            left: 50px; */
+/* 
+            position: absolute;
+            top: 100px; */
+        }
+        .image4{
+            position: fixed;
+        }
+        .image3{
+            position: sticky;
+            top: 100px;
+        }
+        .box{
+            height: 5000px;
+            background-color: bisque;
+
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="img1.jpg" class="image1" width="300px" height="300px" alt="img1"/>
+      <img src="img2.jpg" class="image2" width="300px" height="300px" alt="img2"/>
+      <img src="img3.jpg" class="image3" width="300px" height="300px" alt="img3"/>
+      <img src="img4.jpg" class="image4" width="300px" height="300px" alt="img4"/>
+    </div>
+    <div class="box">
+
+    </div>
+  </body>
+</html>
+
+<!-- 
+Position: 
+    static, relative, absolute, fixed, sticky
+
+    static: no position property
+
+    relative - > top, left, right, bottom, 
+    gap is maintained in relative positioning
+
+    absolute -> top, left, right, bottom,
+    no gap is maintained in absolute positioning
+    realtive to its positioned ancestor. 
+
+    fixed
+    here the image remains fixed throughout the page, dont bother if the user scrolls to another element
+
+    sticky
+    this acts as a fixed element but only to its parent element
+-->
