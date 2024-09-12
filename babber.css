@@ -1,0 +1,9 @@
+/* External CSS
+1. Create a CSS file 
+2. Link CSS to the file. */
+h1{
+   font:bold
+}
+p{
+    background-color: yellow;
+}
