@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation ka Gyaan.!</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        background-color: beige;
+        border: 5px solid black;
+      }
+      .box {
+        width: 350px;
+        height: 80px;
+        background-color: blue;
+        border-radius: 4px;
+        margin: 10px;
+        border: 3px solid red;
+        position: relative;
+        /* animation-name: rightMovement;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-delay: 3;
+        animation-timing-function: linear;
+        animation-direction: alternate; */
+        /* animation-fill-mode:both ; */
+        /* animation-fill-mode: backwards; */
+
+        /* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+        animation: 5s ease-in-out 1s infinite alternate both running
+          rightMovement;
+      }
+      @keyframes rightMovement {
+        from {
+          top: 0vh;
+          left: 0vh;
+        }
+        to {
+          top: 0vh;
+          left: 150vh;
+        }
+      }
+      #ball {
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        background-color: blue;
+        margin: 10px;
+        border: 3px solid red;
+        position: relative;
+        /* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+        animation: 15s ease-in-out 1s infinite normal both running
+          circularMovement;
+      }
+      @keyframes circularMovement {
+        0% {
+          top: 0vh;
+          left: 0vw;
+        }
+        25% {
+          top: 0vh;
+          left: 90vw;
+        }
+        50% {
+          top: 50vh;
+          left: 0vw;
+        }
+        75% {
+          top: 60vh;
+          left: 90vw;
+        }
+        100% {
+          top: 0vh;
+          left: 0vw;
+        }
+      }
+      #box2 {
+        width: 350px;
+        height: 80px;
+        background-color: blue;
+        border-radius: 4px;
+        margin: 10px;
+        border: 3px solid red;
+        position: relative;
+
+        /* @keyframes duration | easing-function | delay |
+iteration-count | direction | fill-mode | play-state | name */
+        animation: 5s ease-in-out 1s infinite alternate both running
+          leftMovement;
+      }
+      @keyframes leftMovement {
+        from {
+          top: 60vh;
+          left: 75vw;
+        }
+        to {
+          top: 60vh;
+          left: 0vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+      <div id="ball"></div>
+      <div id="box2"></div>
+    </div>
+  </body>
+</html>
+
+<!-- https://www.youtube.com/@LearnCodeWithDurgesh/videos -->
