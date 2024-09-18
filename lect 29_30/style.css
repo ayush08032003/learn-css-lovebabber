@@ -1,0 +1,134 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  margin-right: 10rem;
+  margin-left: 10rem;
+  /* background-color: pink; */
+  height: 100%;
+  /* width: 80%; */
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 3fr 3fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+#header{
+    grid-column: 1 / 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    /* text-align: center; */;
+}
+#header h2{
+    font-weight: bold;
+    font-size: 2rem;
+}
+#header p{
+    margin-right: 15rem;
+    margin-left: 15rem;
+    text-align: center;
+    color: grey;
+}
+
+.items {
+  /* background-color: red; */
+  border: 1px solid rgb(94, 92, 92);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+
+}
+.imgDiv{
+    height: 50%;
+}
+.imgDiv img{
+    width: 100%;
+    height: 100%;
+}
+.divText{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+.divText h3{
+    font-weight: 600;
+}
+.divText p{
+    color: grey;
+    font-size: 0.85rem;
+}
+.partOne img{
+    border-radius: 100px;
+    width: 18%;
+}
+.gridFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+.gridFooter .partOne{
+    display: flex;
+    gap: 0.8rem;
+}
+
+/* CSS */
+.partTwo button{
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 4px;
+  /* box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0; */
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Amazon Ember",sans-serif;
+  font-size: 11px;
+  line-height: 23px;
+  /* padding: 0 5px 0 5px; */
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 80px;
+}
+.partTwo button {
+  background-color: #f7fafa;
+}
+
+.partTwo button {
+  border-color: #9e9e9e;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  outline: 0;
+}
+
+.divFooterNameTag h5{
+    color: rgb(60, 60, 198);
+}
+.divFooterNameTag p{
+    color: grey;
+    font-size: 0.7rem;
+}
